@@ -8,6 +8,7 @@ import Mentorship from './pages/Mentorship';
 import Music from './pages/Music';
 import Tour from './pages/Tour';
 import Videos from './pages/Videos';
+import Footer from './components/Footer';
 
 import './App.css';
 import Navbar from './components/Navbar';
@@ -27,6 +28,7 @@ function App() {
           <Route path='/videos' element={<Videos />}/>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

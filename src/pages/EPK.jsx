@@ -1,5 +1,5 @@
 import React from 'react'
-import BigTonesAlbumArt from '../assets/big_tones_album_home.jpg'
+import AltHeader from '../components/AltHeader.jsx'
 import otoClick from '../assets/epk/otoClick.png'
 import tonesPurp from '../assets/epk/tonesPurp.png'
 import moonbeams from '../assets/epk/moonbeams.png'
@@ -10,10 +10,7 @@ import Footer from '../components/Footer.jsx'
 const EPK = () => {
   return (
     <div>
-      <section className='altHeader'>
-        <img src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
-        <h1>OTO Big Tones</h1>
-      </section>
+      <AltHeader/>
       <section>
         <h1 className='altHeader'>EPK</h1>
         <img src={tonesPurp} alt='OTO Big Tones Performing' />
@@ -36,7 +33,6 @@ const EPK = () => {
           PRESS
         </h1>
       </section>
-      <Footer />
     </div>
   );
 };

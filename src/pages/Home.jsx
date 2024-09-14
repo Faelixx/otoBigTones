@@ -18,6 +18,15 @@ const Home = () => {
         </div>
         <a href='https://hypeddit.com/bigtones/existencealbum' target='_blank'>And Other Streaming Platforms</a>
       </section>
+      <hr></hr>
+      <section>
+        <h1 className='altHeader'>More Videos By Big Tones</h1>
+      </section>
+      <hr></hr>
+      <section>
+        <h1 className='altHeader'>Subscribe To The Mailing List</h1>
+        
+      </section>
     </div>
   );
 };
