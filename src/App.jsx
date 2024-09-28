@@ -10,12 +10,12 @@ import Tour from './pages/Tour';
 import Videos from './pages/Videos';
 import Footer from './components/Footer';
 
-import './App.css';
+import './output.css';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black font-league">
       <Navbar/>
       <BrowserRouter>
         <Routes>

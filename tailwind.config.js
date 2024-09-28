@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/pages/*{.jsx}"],
+  content: ["./src/**/*.{jsx, js, tx, tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        '4/3': '4 / 3'
+      },
+      fontFamily: {
+        league: ['League Gothic', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

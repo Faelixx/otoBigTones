@@ -13,9 +13,10 @@ const Navbar = () => {
   ];
 
   return ( 
-    <div className='navBar'>
+    <div className='flex gap-8 items-center justify-center text-slate-50'>
       {menuItems.map(item => (
-        <a href={item.link}>{item.text}</a>
+        <a className="text-lg" href={item.link}>{item.text}</a>
+
       ))}
       
 
