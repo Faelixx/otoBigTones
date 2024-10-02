@@ -12,11 +12,14 @@ import Footer from './components/Footer';
 
 import './output.css';
 import Navbar from './components/Navbar';
+import Viewport from './helpers/Viewport';
 
 function App() {
   return (
     <div className="App bg-black font-league">
-      <Navbar/>
+      {Viewport().width > 640 ? <Navbar/> 
+      : console.log('2')
+      }
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>

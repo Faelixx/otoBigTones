@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Navbar = () => {
 
   const menuItems = [
@@ -12,14 +11,13 @@ const Navbar = () => {
     { icon: 'achievement-icon.png', text: 'Contact', link: '/contact' },
   ];
 
-  return ( 
-    <div className='flex gap-8 items-center justify-center text-slate-50'>
-      {menuItems.map(item => (
-        <a className="text-lg" href={item.link}>{item.text}</a>
-
-      ))}
-      
-
+    return ( 
+      <div>
+        <div className='flex gap-8 items-center justify-center text-slate-50'>
+        {menuItems.map(item => (
+          <a className="text-lg" href={item.link}>{item.text}</a>
+        ))}
+      </div>
     </div>
   );
 };
