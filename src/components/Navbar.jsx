@@ -1,4 +1,6 @@
 import React from 'react'
+import otoLogo from '../assets/otoLogo.png'
+
 const Navbar = () => {
 
   const menuItems = [
@@ -14,6 +16,7 @@ const Navbar = () => {
     return ( 
       <div>
         <div className='flex gap-8 items-center justify-center text-slate-50'>
+        <img className='h-8'  src={otoLogo} alt="OTO Logo"></img>
         {menuItems.map(item => (
           <a className="text-lg" href={item.link}>{item.text}</a>
         ))}

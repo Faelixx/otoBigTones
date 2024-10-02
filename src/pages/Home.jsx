@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+
+
+
 import BigTonesAlbumArt from '../assets/big_tones_album.jpg'
 import Viewport from '../helpers/Viewport';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faApple, faSoundcloud, faAmazon } from "@fortawesome/free-brands-svg-icons"
 
 
@@ -13,9 +16,21 @@ const Home = () => {
   return (
     <div className='flex flex-col items-center justify-items-center'>
       <section className='min-w-full'>
-        <img className='object-cover max-h-36 min-w-full
-        md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
-        <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
+
+        {Viewport().width > 640 ? 
+        <div>
+          <img className='object-cover max-h-36 min-w-full
+          md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
+          <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
+        </div>
+        :
+        <div className='md:'>
+          <img className='object-cover max-h-36 min-w-full
+          md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
+          <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
+        </div>
+        
+        }
       </section>
       <section className='translate-y-[-2rem] flex flex-col items-center justify-items-center'>
         <h2 className='text-2xl text-amber-400'>Watch Open Ya Eyez From Existence</h2>

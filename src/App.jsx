@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import {BrowserRouter, Link, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Link, Routes, Route, useLocation } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -12,13 +12,21 @@ import Footer from './components/Footer';
 
 import './output.css';
 import Navbar from './components/Navbar';
+import ModalMenu from './components/Modal';
 import Viewport from './helpers/Viewport';
 
 function App() {
+
   return (
     <div className="App bg-black font-league">
-      {Viewport().width > 640 ? <Navbar/> 
-      : console.log('2')
+      {Viewport().width > 640 ?
+      <div>
+        <Navbar/> 
+      </div> 
+      :
+      <div className='flex flex-row gap-2 align-bottom justify-end'>
+        <ModalMenu/>
+    w  </div>
       }
       <BrowserRouter>
         <Routes>
