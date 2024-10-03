@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import {BrowserRouter, Link, Routes, Route, useLocation } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -12,7 +13,7 @@ import Footer from './components/Footer';
 
 import './output.css';
 import Navbar from './components/Navbar';
-import ModalMenu from './components/Modal';
+import MenuButton from './components/MenuButton';
 import Viewport from './helpers/Viewport';
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
       </div> 
       :
       <div className='flex flex-row gap-2 align-bottom justify-end'>
-        <ModalMenu/>
-    w  </div>
+        <MenuButton/>
+      </div>
       }
       <BrowserRouter>
         <Routes>
