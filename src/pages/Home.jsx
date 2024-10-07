@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
+import VideoBlock from '../components/VideoBlock';
+import { youtubePlaylists, ytApiKey } from '../api/ytKey';
 
 import BigTonesAlbumArt from '../assets/big_tones_album.jpg'
 import Viewport from '../helpers/Viewport';
@@ -62,7 +63,10 @@ const Home = () => {
       </section>
       <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400'></hr>
       <section>
-        <h1 className='text-amber-400 text-2xl pt-2 pb-2'>More Videos By Big Tones</h1>
+        <h1 className='text-amber-400 text-2xl pt-2 pb-2 text-center'>More Videos By Big Tones</h1>
+        <div>
+          <VideoBlock playlistId={youtubePlaylists.greatest} apiKey={ytApiKey}/>
+        </div>
       </section>
       <hr className='h-px bg-amber-400'></hr>
       <section>

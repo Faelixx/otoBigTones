@@ -714,6 +714,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -959,6 +963,10 @@ video {
     margin-left: -2.5rem;
   }
 
+  .sm\:flex-col{
+    flex-direction: column;
+  }
+
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -984,6 +992,14 @@ video {
 
   .md\:w-\[524px\]{
     width: 524px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:flex-wrap{
+    flex-wrap: wrap;
   }
 }
 
