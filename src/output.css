@@ -567,14 +567,6 @@ video {
   pointer-events: auto;
 }
 
-.visible{
-  visibility: visible;
-}
-
-.invisible{
-  visibility: hidden;
-}
-
 .fixed{
   position: fixed;
 }
@@ -632,6 +624,10 @@ video {
   height: 0.125rem;
 }
 
+.h-52{
+  height: 13rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -652,8 +648,8 @@ video {
   height: 1px;
 }
 
-.max-h-36{
-  max-height: 9rem;
+.max-h-48{
+  max-height: 12rem;
 }
 
 .w-10\/12{

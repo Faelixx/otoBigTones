@@ -19,14 +19,14 @@ const Home = () => {
 
         {Viewport().width > 640 ? 
         <div>
-          <img className='object-cover max-h-36 min-w-full
+          <img className='object-cover max-h-48 min-w-full
           md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
           <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
         </div>
         :
-        <div className='md:'>
-          <img className='object-cover max-h-36 min-w-full
-          md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
+        <div>
+          <img className='object-cover h-52 min-w-full
+          md:min-h-74 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
           <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
         </div>
         
