@@ -25,3 +25,4 @@ yarn-error.log*
 /src/api/apiNotes.txt
 /src/api/ytKey.jsx
 /src/api/YtKey.jsx
+/src/api/spKey.jsx
