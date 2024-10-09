@@ -608,6 +608,11 @@ video {
   z-index: 10;
 }
 
+.mx-\[10px\]{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .-ml-8{
   margin-left: -2rem;
 }
@@ -616,8 +621,55 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-\[-40px\]{
+  margin-bottom: -40px;
+}
+
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[-0px\]{
+  margin-bottom: -0px;
+}
+
+.mb-\[-60px\]{
+  margin-bottom: -60px;
+}
+
+.mb-\[-65px\]{
+  margin-bottom: -65px;
+}
+
+.mb-\[-70px\]{
+  margin-bottom: -70px;
+}
+
+.mb-\[-80px\]{
+  margin-bottom: -80px;
+}
+
+.mb-\[-85px\]{
+  margin-bottom: -85px;
+}
+
 .flex{
   display: flex;
+}
+
+.size-\[\]{
+  width: ;
+  height: ;
+}
+
+.size-\[400px\]{
+  width: 400px;
+  height: 400px;
+}
+
+.size-80{
+  width: 20rem;
+  height: 20rem;
 }
 
 .h-0\.5{
@@ -636,6 +688,10 @@ video {
   height: 2rem;
 }
 
+.h-\[225px\]{
+  height: 225px;
+}
+
 .h-\[9\.5rem\]{
   height: 9.5rem;
 }
@@ -646,6 +702,22 @@ video {
 
 .h-px{
   height: 1px;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[250px\]{
+  height: 250px;
 }
 
 .max-h-48{
@@ -664,12 +736,28 @@ video {
   width: 20rem;
 }
 
+.w-\[1000px\]{
+  width: 1000px;
+}
+
 .w-full{
   width: 100%;
 }
 
 .w-screen{
   width: 100vw;
+}
+
+.w-\[800px\]{
+  width: 800px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
+.w-\[500px\]{
+  width: 500px;
 }
 
 .min-w-full{
@@ -684,6 +772,14 @@ video {
   max-width: 28rem;
 }
 
+.max-w-\[\]{
+  max-width: ;
+}
+
+.max-w-\[65\%\]{
+  max-width: 65%;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -695,6 +791,11 @@ video {
 
 .translate-y-\[-4\.75rem\]{
   --tw-translate-y: -4.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-6\.5rem\]{
+  --tw-translate-y: -6.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -712,10 +813,6 @@ video {
 
 .flex-col{
   flex-direction: column;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-center{
@@ -744,6 +841,10 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .overflow-hidden{
@@ -792,6 +893,18 @@ video {
 
 .object-cover{
   object-fit: cover;
+}
+
+.object-\[center_43\%\]{
+  object-position: center 43%;
+}
+
+.object-\[center_53\%\]{
+  object-position: center 53%;
+}
+
+.object-\[center_23\%\]{
+  object-position: center 23%;
 }
 
 .px-4{
@@ -845,8 +958,18 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-8xl{
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -857,6 +980,16 @@ video {
 
 .text-lg{
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-xl{
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -886,6 +1019,11 @@ video {
 .text-slate-50{
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-slate-200{
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -959,12 +1097,13 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:-ml-10{
-    margin-left: -2.5rem;
+  .sm\:mx-\[10px\]{
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .sm\:flex-col{
-    flex-direction: column;
+  .sm\:-ml-10{
+    margin-left: -2.5rem;
   }
 
   .sm\:px-6{
@@ -982,6 +1121,25 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:mx-\[\]{
+    margin-left: ;
+    margin-right: ;
+  }
+
+  .md\:mx-\[350px\]{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  .md\:mx-\[50px\]{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:h-\[324px\]{
     height: 324px;
   }
@@ -1001,9 +1159,40 @@ video {
   .md\:flex-wrap{
     flex-wrap: wrap;
   }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
+  @media (min-width: 1024px){
+    .md\:lg\:mx-\[150px\]{
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:mx-\[450px\]{
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+
+  .lg\:mx-\[350px\]{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  .lg\:mx-\[250px\]{
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  .lg\:mx-\[150px\]{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
   .lg\:max-h-80{
     max-height: 20rem;
   }

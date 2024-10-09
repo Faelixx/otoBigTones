@@ -19,10 +19,10 @@ const Home = () => {
       <section className='min-w-full'>
 
         {Viewport().width > 640 ? 
-        <div>
+        <div className='mb-[-40px]'>
           <img className='object-cover max-h-48 min-w-full
           md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
-          <h1 className=' text-6xl text-slate-50 text-center translate-y-[-4.75rem]'>OTO Big Tones</h1>
+          <h1 className='text-8xl text-slate-50 text-center translate-y-[-6.5rem] '>OTO Big Tones</h1>
         </div>
         :
         <div>
@@ -34,7 +34,7 @@ const Home = () => {
         }
       </section>
       <section className='translate-y-[-2rem] flex flex-col items-center justify-items-center'>
-        <h2 className='text-2xl text-amber-400'>Watch Open Ya Eyez From Existence</h2>
+        <h2 className='text-4xl text-amber-400'>Watch Open Ya Eyez From Existence</h2>
         <div>
           <iframe className="md:w-[524px] md:h-[324px] w-full" src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
