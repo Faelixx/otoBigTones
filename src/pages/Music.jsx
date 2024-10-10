@@ -1,7 +1,8 @@
 import React from 'react'
 
 import AltHeader from '../components/AltHeader';
-import MusicBlock from '../components/MusicBlock.jsx';
+import AlbumBlock from '../components/AlbumBlock.jsx';
+import SinglesBlock from '../components/SinglesBlock.jsx';
 import { getMusic } from '../api/SpotifyAlbumsApi.jsx'
 
 
@@ -10,12 +11,20 @@ const Music = () => {
     <div>
       <AltHeader />
       <section>
-        <h1 className='text-amber-400 text-center text-6xl'>Music</h1>
+        <h1 className='text-amber-400 text-center text-7xl'>Music</h1>
         <br></br>
         <div>
-          <h1 className='text-amber-400 text-center text-3xl'>Albums</h1>
           <div>
-            <MusicBlock />
+            <AlbumBlock />
+            <br></br>
+            <div className='w-full flex justify-center'>
+              <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400'></hr>
+            </div>
+
+          </div>
+              <br></br>
+          <div>
+            <SinglesBlock />
           </div>
         </div>
 
