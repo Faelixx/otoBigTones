@@ -13,8 +13,10 @@ const getAlbums = async (bearer) => {
   .then(albums => albums.items)
 
 }
+// TODO 
+// Create a state that holds the bearer to limit the amount of tokens created in a single site visit.
 
-export const getAccessToken = async () => {
+export const getMusic = async () => {
   return await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: {

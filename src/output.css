@@ -722,10 +722,6 @@ video {
   width: 260px;
 }
 
-.w-\[800px\]{
-  width: 800px;
-}
-
 .w-\[80px\]{
   width: 80px;
 }
@@ -968,6 +964,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -1170,14 +1171,6 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:flex{
-    display: flex;
-  }
-
-  .xl\:w-\[\]{
-    width: ;
-  }
-
   .xl\:w-\[800px\]{
     width: 800px;
   }

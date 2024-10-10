@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom'
 
 import VideoBlock from '../components/VideoBlock';
 import { youtubePlaylists, ytApiKey } from '../api/ytKey';
-import { getAccessToken } from '../api/SpotifyAlbumsApi';
+import { getMusic } from '../api/SpotifyAlbumsApi';
+import { getYtVideos } from '../api/YoutubeVidsApi';
 
 import BigTonesAlbumArt from '../assets/big_tones_album.jpg'
 import Viewport from '../helpers/Viewport';
@@ -17,8 +18,9 @@ import { faYoutube, faApple, faSoundcloud, faAmazon } from "@fortawesome/free-br
 const Home = () => {
   return (
     <div className='flex flex-col items-center justify-items-center'>
+        {console.log('Spotify API Call: ', getMusic())}
+        {console.log('Youtube API Call: ' ,getYtVideos(youtubePlaylists.greatest, ytApiKey))}
       <section className='min-w-full'>
-        {console.log(getAccessToken())}
         {Viewport().width > 640 ? 
         <div className='mb-[-40px]'>
           <img className='object-cover max-h-48 min-w-full
