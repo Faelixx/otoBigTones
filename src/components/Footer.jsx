@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ToTop from './ToTop.jsx'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faFacebook, faSpotify } from "@fortawesome/free-brands-svg-icons"
 
@@ -17,6 +19,7 @@ const Footer = () => {
       <a href='https://open.spotify.com/artist/2VH86MazYojDoIJbU8st1E' rel='noreferrer'  target='_blank'>
       <FontAwesomeIcon className='text-amber-400' icon={faSpotify}/>
       </a>
+      <ToTop />
     </div>
   )
 }
