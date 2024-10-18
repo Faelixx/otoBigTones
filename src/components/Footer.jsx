@@ -1,12 +1,22 @@
 import React from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube, faInstagram, faFacebook, faSpotify } from "@fortawesome/free-brands-svg-icons"
+
 const Footer = () => {
   return (
-    <div>
-      <a href=''>YouTube</a>
-      <a href=''>Instagram</a>
-      <a href=''>Facebook</a>
-      <a href=''>Music</a>
+    <div className='flex flex-row justify-center align-center items-center gap-3 bg-amber-200 w-full'>
+      <a href='https://www.youtube.com/channel/UCPhvY1BXpxeamDwLGvnjIjQeferrer' rel='noreferrer'  target='_blank'>      <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>
+      </a>
+      <a href='https://www.instagram.com/bigtones.oto/' rel='noreferrer' target='_blank'>
+      <FontAwesomeIcon className='text-amber-400' icon={faInstagram}/>
+      </a>
+      <a href='https://www.facebook.com/bigtonesbaby/' rel='noreferrer' target='_blank'>
+      <FontAwesomeIcon className='text-amber-400' icon={faFacebook}/>
+      </a>
+      <a href='https://open.spotify.com/artist/2VH86MazYojDoIJbU8st1E' rel='noreferrer'  target='_blank'>
+      <FontAwesomeIcon className='text-amber-400' icon={faSpotify}/>
+      </a>
     </div>
   )
 }

@@ -25,7 +25,7 @@ function App() {
         <Navbar/> 
       </div> 
       :
-      <div className='flex flex-row gap-2 align-bottom justify-end'>
+      <div className='flex flex-row gap-2 align-bottom'>
         <MenuButton/>
       </div>
       }
