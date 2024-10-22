@@ -16,10 +16,11 @@ import Navbar from './components/Navbar';
 import MenuButton from './components/MenuButton';
 import Viewport from './helpers/Viewport';
 
+
 function App() {
 
   return (
-    <div className="App bg-black font-league">
+    <div className="App font-league bg-black">
       {Viewport().width > 640 ?
       <div>
         <Navbar/> 
