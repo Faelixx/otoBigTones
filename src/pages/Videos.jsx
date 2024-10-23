@@ -6,6 +6,8 @@ import { youtubePlaylists, ytApiKey } from '../api/ytKey';
 
 
 const Videos = () => {
+
+  
   return (
     <div>
       <AltHeader />
@@ -14,7 +16,7 @@ const Videos = () => {
       <section>
           <h1 className='text-amber-400 text-center text-5xl'>Music Videos</h1>
           <br></br>
-          <div className='flex items-center flex-col flex-wrap md:flex-row'>
+          <div className=''>
             <VideoModalBlock playlistId={youtubePlaylists.releases} apiKey={ytApiKey}/>
           </div>
           <div className='flex flex-col items-center'>
@@ -24,7 +26,7 @@ const Videos = () => {
       <section>
           <h1 className='text-amber-400 text-center text-5xl mt-4'>Performance Recaps</h1>
           <br></br>
-          <div className='flex items-center justify-center flex-col md:flex-wrap md:flex-row'>
+          <div className=''>
             <VideoModalBlock playlistId={youtubePlaylists.recaps} apiKey={ytApiKey}/>
           </div>
 

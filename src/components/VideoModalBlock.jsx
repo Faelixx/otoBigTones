@@ -3,6 +3,20 @@ import { useState, useEffect } from 'react';
 import { getYtVideos } from '../api/YoutubeVidsApi';
 import ModalVideo from 'react-modal-video';
 
+
+import {Swiper, SwiperSlide} from 'swiper/react';
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay, } from "@fortawesome/free-solid-svg-icons"
+
+
+import '../styles/swiper.css'
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+
 import 'react-modal-video/scss/modal-video.scss'
 
 
@@ -11,7 +25,6 @@ const ThumbnailElement = (props) => {
 
   return (
     <>
-    <div className=''>
       <ModalVideo
         channel='youtube'
         youtube={{ mute: 0, autoplay: 0 }}
@@ -19,23 +32,31 @@ const ThumbnailElement = (props) => {
         videoId={props.id}
         onClose={() => setOpen(false)}
       />
-    </div>
-    <div className='border-2 border-amber-400 rounded'>
-      <button onClick={() => setOpen(true)}>
-      <h1 className='text-center mt-1 text-xl'>{props.title}</h1>
-        <img className='hover:brightness-50 sm:h-1/2 md:h-[280px]' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
+    <div className='border-x-2 border-amber-400/25 rounded relative mt-[-300px]'>
+      <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
+        <div className='flex flex-col justify-center items-center justify-items-center translate-y-72'>
+          <h1 className='text-center mt-1 text-3xl text-center'>{props.title}</h1>
+          <div><br></br></div>
+          <div><br></br></div>
+          <div><br></br></div>
+          <div><br></br></div>
+          <div><br></br></div>
+          <FontAwesomeIcon className='text-amber-400 text-8xl' icon={faPlay} />
+        </div>
+        <img className='' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
       </button>
-      
+
     </div>
 
-      
+
     </>
   )
 }
 
 const VideoModalBlock = (props) => {
   const [videoData, setVideoData] = useState([]);
-  
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   useEffect(() => {
     getYtVideos(props.playlistId, props.apiKey)
     .then(data => {setVideoData(transformData(data))} ).catch()
@@ -43,17 +64,57 @@ const VideoModalBlock = (props) => {
 
   return (
     <div className='flex gap-2 flex-col justify-center md:flex-row md:flex-wrap'>
+
+      <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2"
+      >
+
         {
-          videoData.length? videoData.map((videoObj, idx) =>  
-          <ThumbnailElement 
-          key={idx} 
-          id={videoObj.contentDetails.videoId} 
-          thumbnail={videoObj.snippet.thumbnails.standard.url}
-          title={videoObj.snippet.title}
-          />)
-          : 
+          videoData.length? videoData.map((videoObj, idx) =>
+          <>
+            <SwiperSlide>
+            <ThumbnailElement
+              key={idx}
+              id={videoObj.contentDetails.videoId}
+              thumbnail={videoObj.snippet.thumbnails.standard.url}
+              title={videoObj.snippet.title}
+          />
+            </SwiperSlide>
+          </>
+          )
+          :
           []
         }
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        {
+          videoData.length? videoData.map((videoObj, idx) =>
+            <SwiperSlide>
+              <img src={videoObj.snippet.thumbnails.standard.url} alt={videoObj.snippet.title + 'Thumbnail'}/>
+            </SwiperSlide>
+          )
+          :
+          []
+        }
+      </Swiper>
     </div>
   );
 };
