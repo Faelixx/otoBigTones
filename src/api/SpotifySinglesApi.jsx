@@ -1,7 +1,7 @@
 import { clientId, clientSecret } from "./spKey";
 
 const getSingles = async (bearer) => {
-  const url = 'https://api.spotify.com/v1/artists/2VH86MazYojDoIJbU8st1E/albums?include_groups=single'
+  const url = 'https://api.spotify.com/v1/playlists/1MnrvzqRhVtdSRRsMzCEha'
 
   return await fetch(url, {
     method: 'GET',
@@ -10,7 +10,7 @@ const getSingles = async (bearer) => {
     }
   })
   .then(data => data.json())
-  .then(albums => albums.items)
+
 
 }
 // TODO 

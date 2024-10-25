@@ -32,7 +32,7 @@ const ThumbnailElement = (props) => {
         videoId={props.id}
         onClose={() => setOpen(false)}
       />
-    <div className='border-x-2 border-amber-400/25 rounded relative mt-[-300px]'>
+    <div className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
       <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
         <div className='flex flex-col justify-center items-center justify-items-center translate-y-72'>
           <h1 className='text-center mt-1 text-3xl text-center'>{props.title}</h1>
@@ -77,7 +77,7 @@ const VideoModalBlock = (props) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-
+        <p className="text-center text-3xl mt-4" >See more Videos below</p>
         {
           videoData.length? videoData.map((videoObj, idx) =>
           <>
@@ -108,7 +108,9 @@ const VideoModalBlock = (props) => {
         {
           videoData.length? videoData.map((videoObj, idx) =>
             <SwiperSlide>
-              <img src={videoObj.snippet.thumbnails.standard.url} alt={videoObj.snippet.title + 'Thumbnail'}/>
+              <button>
+                <img src={videoObj.snippet.thumbnails.standard.url} alt={videoObj.snippet.title + 'Thumbnail'}/>
+              </button>
             </SwiperSlide>
           )
           :

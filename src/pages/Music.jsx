@@ -25,6 +25,7 @@ const Music = () => {
               <br></br>
           <div>
             <SinglesBlock />
+            <br/>
           </div>
         </div>
 
