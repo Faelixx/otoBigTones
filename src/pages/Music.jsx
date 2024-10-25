@@ -11,7 +11,7 @@ const Music = () => {
     <div>
       <AltHeader />
       <section>
-        <h1 className='text-amber-400 text-center text-7xl'>Music</h1>
+        <h1 className='text-amber-400 text-center text-8xl'>Music</h1>
         <br></br>
         <div>
           <div>

@@ -12,9 +12,7 @@ const Videos = () => {
     <div>
       <AltHeader />
       <section>
-      </section>
-      <section>
-          <h1 className='text-amber-400 text-center text-5xl'>Music Videos</h1>
+          <h1 className='text-amber-400 text-center text-8xl'>Music Videos</h1>
           <br></br>
           <div className=''>
             <VideoModalBlock playlistId={youtubePlaylists.releases} apiKey={ytApiKey}/>

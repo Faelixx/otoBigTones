@@ -17,7 +17,7 @@ const EPK = () => {
     <div>
       <AltHeader/>
       <section>
-        <h1 className='text-amber-400 text-center text-5xl'>EPK</h1>
+        <h1 className='text-amber-400 text-center text-8xl'>EPK</h1>
         {Viewport().width < 640 ? 
         <div className='text-xl flex flex-col items-center mx-[10px] gap-2'>
           <div className='flex flex-col gap-2'>

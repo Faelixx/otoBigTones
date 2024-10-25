@@ -9,6 +9,7 @@ import otoLogo from '../assets/otoLogo.png'
 const Footer = () => {
   return (
     <>
+    <br></br>
     <div className='flex justify-center'>
     <hr className='h-0.5 rounded-md border-0 w-full bg-orange-300 outline-amber-400'></hr>
     </div>
