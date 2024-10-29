@@ -35,7 +35,6 @@ const ThumbnailElement = (props) => {
     <div className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
       <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
         <div className='flex flex-col justify-center items-center justify-items-center translate-y-72'>
-          <h1 className='text-center mt-1 text-3xl text-center'>{props.title}</h1>
           <div><br></br></div>
           <div><br></br></div>
           <div><br></br></div>
@@ -45,6 +44,7 @@ const ThumbnailElement = (props) => {
         </div>
         <img className='' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
       </button>
+      <h1 className='text-center mt-1 text-3xl text-center text-amber-600'>{props.title}</h1>
 
     </div>
 
@@ -67,8 +67,8 @@ const VideoModalBlock = (props) => {
 
       <Swiper
         style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          '--swiper-navigation-color': '#FFC052',
+          '--swiper-pagination-color': '#FFC052',
         }}
         loop={true}
         spaceBetween={10}

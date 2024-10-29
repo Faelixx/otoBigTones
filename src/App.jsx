@@ -21,16 +21,12 @@ function App() {
 
   return (
     <div className="App font-league bg-black">
-      {Viewport().width > 640 ?
-      <div>
-        <Navbar/> 
-      </div> 
-      :
-      <div className='flex flex-row gap-2 align-bottom'>
-        <MenuButton/>
-      </div>
-      }
       <BrowserRouter>
+      {Viewport().width > 640 ?
+        <Navbar/> 
+      :
+        <MenuButton/>
+      }
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/contact' element={<Contact />}/>

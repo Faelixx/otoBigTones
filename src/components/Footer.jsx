@@ -19,7 +19,8 @@ const Footer = () => {
         </img>
       </div>
       <div className='ml-[58px] flex gap-3'>
-      <a href='https://www.youtube.com/channel/UCPhvY1BXpxeamDwLGvnjIjQeferrer' rel='noreferrer'  target='_blank'>      <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>
+      <a href='https://www.youtube.com/channel/UCPhvY1BXpxeamDwLGvnjIjQeferrer' rel='noreferrer'  target='_blank'>      
+      <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>
       </a>
       <a href='https://www.instagram.com/bigtones.oto/' rel='noreferrer' target='_blank'>
       <FontAwesomeIcon className='text-amber-400' icon={faInstagram}/>

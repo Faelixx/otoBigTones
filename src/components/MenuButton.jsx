@@ -5,6 +5,9 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import NavBarItems from '../helpers/NavBarItems'
 import otoLogo from '../assets/otoLogo.png'
 
+import { useLocation } from 'react-router-dom'
+
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons"
@@ -13,6 +16,9 @@ const MenuButton = () => {
 const [open, setOpen] = useState(false);
 
 const toggle = () => setOpen(!open);
+
+let location = useLocation().pathname
+
   
   return (
     <div className='flex flex-row w-full justify-end'>
@@ -56,7 +62,11 @@ const toggle = () => setOpen(!open);
                   <DialogTitle className="text-base font-semibold leading-6 text-gray-900">OTO Big Tones</DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">        {NavBarItems().map(item => (
-          <a className="text-lg" href={item.link}>{item.text}<br></br></a>
+            location === item.link?
+
+            <a className="text-lg text-amber-400 underline" href={item.link}>{item.text}<br></br></a>
+            :
+            <a className="text-lg hover:text-amber-400" href={item.link}>{item.text}<br></br></a>
         ))}</div>
               </div>
             </DialogPanel>
