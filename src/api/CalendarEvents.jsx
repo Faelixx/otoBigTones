@@ -1,7 +1,4 @@
 import React from 'react'
-import  Card  from '@mui/material/Card'
-import  CardContent  from '@mui/material/CardContent'
-import  CardHeader  from '@mui/material/CardHeader'
 
 import { calendarId } from './calKey.jsx'
 import { ytApiKey } from './ytKey.jsx'
@@ -11,6 +8,11 @@ const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+
+
+  const card1 = 'md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-950 rounded-sm'
+  const card2 = 'md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900 rounded-sm'
 
   const CALENDAR_ID = calendarId;
   const API_KEY = ytApiKey;
@@ -45,28 +47,36 @@ const CalendarEvents = () => {
   }, []);
 
   if (loading) return (
-    <Card classname='w-full max-w-2xl mx-auto'>
-      <CardContent className='p-6'>
-        <p className='text-center'>Loading upcoming dates...</p>
-      </CardContent>
-    </Card>
+    <div className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zincs-900'>
+    <p className='text-center'>Loading upcoming dates...</p>
+    </div> 
   );
 
   if (error) return (
-    <Card className='w-full max-w-2xl mx-auto'>
-      <CardContent className='p-6'>
+    <div className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900'>
         <p className='text-center text-amber-600'>Error: {error}</p>
-      </CardContent>
-    </Card>
+        </div>
+
   );
 
   return (
-    <div>
-      <Card className='w-20 max-w-2xl mx-auto'>
-        <CardContent>
-          <p>Upcoming Tour Dates</p>
-        </CardContent>
-      </Card>
+    <div className='sm:mx-2'>
+    <div className={card1}>
+      <p className='text-2xl m-2 text-amber-400'>Upcoming Dates</p>
+      {console.log(events)}
+      </div>
+      {
+        events.length?
+        events.map((e) => 
+          <div className={events.indexOf(e) % 2 === 0? card2 : card1}>
+            <p className='text-2xl m-2 text-amber-400'>{e.title}</p>
+          </div>
+        )
+        :
+        <div className={card2}>
+        <p className='text-2xl m-2 text-amber-400'>Follow Big Tones For more show announcements!</p>
+        </div>
+      }
     </div>
   );
 };
