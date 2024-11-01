@@ -4,6 +4,9 @@ import { calendarId } from './calKey.jsx'
 import { ytApiKey } from './ytKey.jsx'
 import { useState, useEffect } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons"
+
 const CalendarEvents = () => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,8 +14,8 @@ const CalendarEvents = () => {
 
 
 
-  const card1 = 'md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-950 rounded-sm'
-  const card2 = 'md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900 rounded-sm'
+  const card2 = 'flex flex-row md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900 rounded-md my-2 p-2'
+  const card1 = 'flex flex-row md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-950 rounded-md my-2 p-2'
 
   const CALENDAR_ID = calendarId;
   const API_KEY = ytApiKey;
@@ -62,19 +65,34 @@ const CalendarEvents = () => {
   return (
     <div className='sm:mx-2'>
     <div className={card1}>
-      <p className='text-2xl m-2 text-amber-400'>Upcoming Dates</p>
-      {console.log(events)}
+      <p className='text-5xl m-2 text-amber-400'>Upcoming Dates</p>
       </div>
       {
         events.length?
         events.map((e) => 
           <div className={events.indexOf(e) % 2 === 0? card2 : card1}>
-            <p className='text-2xl m-2 text-amber-400'>{e.title}</p>
+            <div>
+            <FontAwesomeIcon className='text-amber-400 text-5xl' icon={faCalendarCheck} />
+            </div>
+            <div className='w-full'>
+              <p className='text-2xl mx-2 pr-4 text-amber-400'>{e.title}</p>
+              {e.description ? 
+              <a href={e.description} target='_blank' rel='noreferrer'className='text-xl mx-2 text-white'>Get tickets here!</a>
+              :
+              <></>
+              }
+            </div>
+            <div className='flex flex-col w-full justify-end items-end'>
+            <p className='text-2xl text-amber-400'>{e.location}</p>
+            <div>
+              <p className='text-3xl text-white'>{e.start.toLocaleDateString()}</p>
+            </div>
+            </div>
           </div>
         )
         :
         <div className={card2}>
-        <p className='text-2xl m-2 text-amber-400'>Follow Big Tones For more show announcements!</p>
+        <p className='text-2xl m-2 text-amber-400'>Follow Big Tones for all show announcements!</p>
         </div>
       }
     </div>

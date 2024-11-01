@@ -13,6 +13,18 @@
   align-items: center;
 }
 
+.swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .mySwiper2 {
+    width: 100vw;
+  }
+} 
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -58,8 +70,6 @@ body {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
-  margin-left: 20px;
-  margin-right: 20px;
 
 }
 

@@ -21,15 +21,15 @@ let location = useLocation().pathname
 
   
   return (
-    <div className='flex flex-row w-full justify-end'>
-      <div className='flex flex-row justify-center w-full'>
-        <a href='/'>
-          <img className='h-8 ml-[21px]'  src={otoLogo} alt="OTO Logo"></img>
-        </a>
-      </div>
-      <button onClick={toggle}>
+    <div className='flex flex-row w-full justify-start'>
+      <button className='ml-2' onClick={toggle}>
       <FontAwesomeIcon className='text-slate-50 text-2xl mix-blend-lighten' icon={faBars}/>
       </button>
+      <div className='flex flex-row justify-center w-full mr-2'>
+        <a href='/'>
+          <img className='h-8'  src={otoLogo} alt="OTO Logo"></img>
+        </a>
+      </div>
 
       <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop

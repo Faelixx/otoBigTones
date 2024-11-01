@@ -34,7 +34,7 @@ const ThumbnailElement = (props) => {
       />
     <div className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
       <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
-        <div className='flex flex-col justify-center items-center justify-items-center translate-y-72'>
+        <div className='flex flex-col justify-center items-center justify-items-center translate-y-56 lg:translate-y-72'>
           <div><br></br></div>
           <div><br></br></div>
           <div><br></br></div>

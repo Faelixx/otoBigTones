@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { getMusic } from '../api/SpotifyAlbumsApi.jsx'
-import Viewport from '../helpers/Viewport';
 
 
 const AlbumElement = (props) => {
