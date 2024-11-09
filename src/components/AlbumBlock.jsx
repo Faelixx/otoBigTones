@@ -25,7 +25,7 @@ const AlbumBlock = () => {
         albumData.length? albumData.map(
           (albumId, idx) =>
             <div className='w-full'>
-                <h1 className='text-amber-400 text-center text-3xl'>{albumId.name}</h1>
+              <h1 className='text-amber-400 text-center text-3xl'>{albumId.name}</h1>
               <div className={'w-full flex flex-col max-[640px]:items-center  md:items-start md:flex-row gap-2 md:gap-8 justify-center'}>
 
                 <div>

@@ -11,7 +11,7 @@ const ContactForm = () => {
     <div className=' flex flex-col items-center'>
       <h1 className='text-2xl text-amber-400 text-left mt-4'>Send an email to Big Tones OTO</h1>
       <form onSubmit={handleSubmit}>
-      <div className='flex flex-col mt-2'>
+      <div className='flex flex-col mt-2 text-white'>
         <label htmlFor="email">
           Email Address
         </label>

@@ -21,7 +21,7 @@ const ToTop = (props) => {
   return (
       <div className={showGoTop ? '' : `hidden` } onClick={handleScrollUp}>
         <button>
-          <p className='text-right'>🔝Scroll To Top🔝</p>
+          <p className='text-right text-white'>🔝Scroll To Top🔝</p>
         </button>
     </div>
   );

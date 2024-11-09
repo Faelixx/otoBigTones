@@ -44,7 +44,7 @@ const ThumbnailElement = (props) => {
         </div>
         <img className='' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
       </button>
-      <h1 className='text-center mt-1 text-3xl text-center text-amber-600'>{props.title}</h1>
+      <h1 className='text-center mt-1 text-3xl text-center text-amber-400'>{props.title}</h1>
 
     </div>
 
@@ -54,8 +54,8 @@ const ThumbnailElement = (props) => {
 }
 
 const VideoModalBlock = (props) => {
-  const [videoData, setVideoData] = useState([]);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [videoData, setVideoData] = useState([]);
 
   useEffect(() => {
     getYtVideos(props.playlistId, props.apiKey)
@@ -63,7 +63,7 @@ const VideoModalBlock = (props) => {
   }, []);
 
   return (
-    <div className='flex gap-2 flex-col justify-center md:flex-row md:flex-wrap'>
+    <div className=''>
 
       <Swiper
         style={{
@@ -77,7 +77,7 @@ const VideoModalBlock = (props) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        <p className="text-center text-3xl mt-4" >See more Videos below</p>
+        <p className="text-center text-3xl mt-4 text-white" >More Videos below</p>
         {
           videoData.length? videoData.map((videoObj, idx) =>
           <>

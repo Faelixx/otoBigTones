@@ -38,7 +38,7 @@ body {
 }
 
 .swiper {
-  width: 80vw;
+  width: 100vw;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -76,9 +76,9 @@ body {
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
-  opacity: 0.4;
-    padding-left: 20px;
-  padding-right: 20px;
+  /* opacity: 0.4;
+  padding-left: 20px;
+  padding-right: 20px; */
 
 }
 

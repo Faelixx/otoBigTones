@@ -47,7 +47,7 @@ const Contact = () => {
               item.mailto? 
               <div className='flex flex-row gap-3 items-baseline'>
               <div className='min-w-16'>
-                <h1 className='text-xl text-right'>{item.platform + ":"}</h1>
+                <h1 className='text-xl text-right text-white'>{item.platform + ":"}</h1>
               </div>
               <div className='min-w-48'>
                 <a className='text-2xl text-amber-400 text-left' href={'mailto:' + item.link}>{item.shorthand}</a>
@@ -59,7 +59,7 @@ const Contact = () => {
 
               <div className='flex flex-row gap-3 items-baseline'>
                 <div className='min-w-16'>
-                  <h1 className='text-xl text-right'>{item.platform + ":"}</h1>
+                  <h1 className='text-xl text-right text-white'>{item.platform + ":"}</h1>
                 </div>
                 <div className='min-w-48'>
                   <a className='text-2xl text-amber-400 text-left' target='_blank' rel='noreferrer' href={item.link}>{item.shorthand}</a>
