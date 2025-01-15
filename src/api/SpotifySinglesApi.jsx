@@ -1,7 +1,7 @@
 import { clientId, clientSecret } from "./spKey";
 
 const getSingles = async (bearer) => {
-  const url = 'https://api.spotify.com/v1/playlists/1MnrvzqRhVtdSRRsMzCEha'
+  const url = 'https://api.spotify.com/v1/playlists/5xLokga9WeUX75wU9uZttp'
 
   return await fetch(url, {
     method: 'GET',
@@ -9,7 +9,9 @@ const getSingles = async (bearer) => {
       'Authorization': `Bearer ${bearer}`,
     }
   })
-  .then(data => data.json())
+  .then(data => 
+    data.json()
+  )
 
 
 }

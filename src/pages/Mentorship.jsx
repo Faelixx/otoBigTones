@@ -88,7 +88,7 @@ const Mentorship = () => {
               <>
               <SwiperSlide>
               <div className='flex flex-col items-center justify-center my-2'>
-                <img className='s-[70vw]' src={item.image} alt={item.caption} />
+                <img className='sm:h-[225px] sm:w-[1000px] md:h-96 md:w-[70vw] object-cover object-[center_43%]' src={item.image} alt={item.caption} />
               </div>
               
               </SwiperSlide>              
@@ -105,7 +105,7 @@ const Mentorship = () => {
         
       </section>
       <section>
-      <div className='flex flex-col items-center mx-16 my-2'>
+      <div className='flex flex-col items-center justify-center mx-16 my-2'>
             <VideoModalBlock playlistId={youtubePlaylists.mentorship} apiKey={ytApiKey}/>
           </div>
       </section>
