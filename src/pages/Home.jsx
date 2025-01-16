@@ -1,4 +1,5 @@
 import React from 'react'
+import LinkPreview from '../components/LinkPreview';
 
 import VideoBlock from '../components/VideoBlock';
 import { youtubePlaylists, ytApiKey } from '../api/ytKey';
@@ -72,8 +73,9 @@ const Home = () => {
       </section>
       <hr className='h-px bg-amber-400'></hr>
       <section>
+
         {/* <h1 className='text-amber-400'>Subscribe To The Mailing List</h1> */}
-        
+        <LinkPreview/>
       </section>
     </div>
   );
