@@ -9,8 +9,9 @@ import iceCream from '../assets/epk/iceCream.png'
 
 import Viewport from '../helpers/Viewport';
 
-import Footer from '../components/Footer.jsx'
-import Navbar from  '../components/Navbar.jsx'
+import { LinkPreview } from "@dhaiwat10/react-link-preview"
+import { articles } from '../api/articles.jsx'
+import { Link } from 'react-router-dom'
 
 const EPK = () => {
   return (
@@ -71,11 +72,21 @@ const EPK = () => {
           </div>
         </div>
       </section>
-      {/* <section className='pressLinks'>
-        <h1 className='altHeader'>
-          PRESS
-        </h1>
-      </section> */}
+      <section className='pressLinks'>
+      <div className='flex flex-col items-center'>
+        <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400'></hr>
+      </div>
+        <div>
+          <h1 className='text-amber-400 text-center text-5xl mt-4'>
+            PRESS
+          </h1>
+          <div>
+            {
+              articles.length? articles.map((article, idx) =>  <LinkPreview url={article.url} width='400px' />) : []
+            }  
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
