@@ -1,4 +1,6 @@
 import React from 'react';
+import AOS from 'aos';
+
 import { useState, useEffect } from 'react';
 import { getYtVideos } from '../api/YoutubeVidsApi';
 import ModalVideo from 'react-modal-video';
@@ -23,6 +25,8 @@ import 'react-modal-video/scss/modal-video.scss'
 const ThumbnailElement = (props) => {
   const [isOpen, setOpen] = useState(false);
 
+  AOS.init();
+
   return (
     <>
       <ModalVideo
@@ -32,7 +36,7 @@ const ThumbnailElement = (props) => {
         videoId={props.id}
         onClose={() => setOpen(false)}
       />
-    <div className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
+    <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
       <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
         <div className='flex flex-col justify-center items-center justify-items-center translate-y-56 lg:translate-y-72'>
           <div><br></br></div>
@@ -42,9 +46,9 @@ const ThumbnailElement = (props) => {
           <div><br></br></div>
           <FontAwesomeIcon className='text-amber-400 text-8xl' icon={faPlay} />
         </div>
-        <img className='' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
+        <img data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
       </button>
-      <h1 className='text-center mt-1 text-3xl text-center text-amber-400'>{props.title}</h1>
+      <h1 data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-center mt-1 text-3xl text-center text-amber-400'>{props.title}</h1>
 
     </div>
 
@@ -62,8 +66,10 @@ const VideoModalBlock = (props) => {
     .then(data => {setVideoData(transformData(data))} ).catch()
   }, []);
 
+  AOS.init();
+
   return (
-    <div className=''>
+    <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className=''>
 
       <Swiper
         style={{
@@ -77,7 +83,7 @@ const VideoModalBlock = (props) => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        <p className="text-center text-3xl mt-4 text-white" >More Videos below</p>
+        <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className="text-center text-3xl mt-4 text-white" >More Videos below</p>
         {
           videoData.length? videoData.map((videoObj, idx) =>
           <>
@@ -108,7 +114,7 @@ const VideoModalBlock = (props) => {
         {
           videoData.length? videoData.map((videoObj, idx) =>
             <SwiperSlide>
-              <button>
+              <button data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250'>
                 <img src={videoObj.snippet.thumbnails.standard.url} alt={videoObj.snippet.title + 'Thumbnail'}/>
               </button>
             </SwiperSlide>

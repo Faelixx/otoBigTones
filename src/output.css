@@ -716,6 +716,10 @@ video {
   height: 0.125rem;
 }
 
+.h-28{
+  height: 7rem;
+}
+
 .h-52{
   height: 13rem;
 }
@@ -770,6 +774,10 @@ video {
 
 .w-10\/12{
   width: 83.333333%;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .w-6{
@@ -932,6 +940,10 @@ video {
   gap: 2rem;
 }
 
+.gap-x-2{
+  column-gap: 0.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1026,6 +1038,10 @@ video {
 
 .object-\[center_48\%\]{
   object-position: center 48%;
+}
+
+.object-top{
+  object-position: top;
 }
 
 .p-2{
