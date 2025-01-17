@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route, } from 'react-router-dom';
+import {HashRouter, Routes, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App font-league bg-black">
-      <BrowserRouter>
+      <HashRouter>
       {Viewport().width > 640 ?
         <Navbar/> 
       :
@@ -34,7 +34,7 @@ function App() {
           <Route path='/tour' element={<Tour />}/>
           <Route path='/videos' element={<Videos />}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );

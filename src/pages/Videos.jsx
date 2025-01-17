@@ -23,14 +23,14 @@ const Videos = () => {
             <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400'></hr>
           </div>
       </section>
-      {/* <section>
+      <section>
           <h1 className='text-amber-400 text-center text-5xl mt-4'>Live Performances</h1>
           <br></br>
           <div className=''>
             <VideoModalBlock playlistId={youtubePlaylists.performances} apiKey={ytApiKey}/>
           </div>
 
-      </section> */}
+      </section>
       <section>
           <h1 className='text-amber-400 text-center text-5xl mt-4'>Event Recaps</h1>
           <br></br>

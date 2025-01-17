@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "http://faelixx.github.io/otoBigTones",
+  "homepage": "https://faelixx.github.io/otoBigTones/",
   "private": true,
   "dependencies": {
     "@dhaiwat10/react-link-preview": "^1.15.0",
