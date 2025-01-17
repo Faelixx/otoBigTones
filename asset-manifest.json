@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/otoBigTones/static/css/main.baa5a3ef.css",
-    "main.js": "/otoBigTones/static/js/main.8a7cfc40.js",
+    "main.js": "/otoBigTones/static/js/main.db0c17e2.js",
     "static/js/453.d855a71b.chunk.js": "/otoBigTones/static/js/453.d855a71b.chunk.js",
     "static/media/1.jpg": "/otoBigTones/static/media/1.00a9e8d9e6ddcfd925e9.jpg",
     "static/media/header.jpg": "/otoBigTones/static/media/header.ec8e9b914aa85cda5854.jpg",
@@ -18,14 +18,13 @@
     "static/media/big_tones_album.jpg": "/otoBigTones/static/media/big_tones_album.ed3a0a66ce3693da56c8.jpg",
     "static/media/otoLogo.png": "/otoBigTones/static/media/otoLogo.1b2abda8c6ea3573c01f.png",
     "static/media/moonbeams.png": "/otoBigTones/static/media/moonbeams.0f4c32e3cbcd63081e01.png",
-    "static/media/logo.svg": "/otoBigTones/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/otoBigTones/index.html",
     "main.baa5a3ef.css.map": "/otoBigTones/static/css/main.baa5a3ef.css.map",
-    "main.8a7cfc40.js.map": "/otoBigTones/static/js/main.8a7cfc40.js.map",
+    "main.db0c17e2.js.map": "/otoBigTones/static/js/main.db0c17e2.js.map",
     "453.d855a71b.chunk.js.map": "/otoBigTones/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baa5a3ef.css",
-    "static/js/main.8a7cfc40.js"
+    "static/js/main.db0c17e2.js"
   ]
 }
