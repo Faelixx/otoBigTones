@@ -4,8 +4,6 @@ import 'aos/dist/aos.css';
 
 import VideoBlock from '../components/VideoBlock';
 import { youtubePlaylists, ytApiKey } from '../api/ytKey';
-import { getMusic } from '../api/SpotifyAlbumsApi';
-import { getYtVideos } from '../api/YoutubeVidsApi';
 
 import BigTonesAlbumArt from '../assets/big_tones_album.jpg'
 import Viewport from '../helpers/Viewport';
@@ -52,7 +50,7 @@ const Home = () => {
           }
         </div>
         
-        <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank'>And Other Streaming Platforms 
+        <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank' rel='noreferrer'>And Other Streaming Platforms 
         <br></br>
         <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-row gap-2 justify-center'>
       <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>

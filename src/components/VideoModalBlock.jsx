@@ -64,7 +64,7 @@ const VideoModalBlock = (props) => {
   useEffect(() => {
     getYtVideos(props.playlistId, props.apiKey)
     .then(data => {setVideoData(transformData(data))} ).catch()
-  }, []);
+  }, [props.playlistId, props.apiKey]);
 
   AOS.init();
 

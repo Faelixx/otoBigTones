@@ -1,5 +1,3 @@
-import React from 'react'
-
 const NavBarItems = () => {
   const menuItems = [
     { icon: 'timer-icon.png', text: 'Home', link: '/' },

@@ -4,10 +4,10 @@ import AOS from 'aos'
 import AltHeader from '../components/AltHeader';
 import AlbumBlock from '../components/AlbumBlock.jsx';
 import SinglesBlock from '../components/SinglesBlock.jsx';
-import { getMusic } from '../api/SpotifyAlbumsApi.jsx'
 
 
 const Music = () => {
+  AOS.init();
   return (
     <div>
       <AltHeader />
