@@ -1,4 +1,5 @@
 import React from 'react'
+import AOS from 'aos';
 
 import { calendarId } from './calKey.jsx'
 import { ytApiKey } from './ytKey.jsx'
@@ -49,50 +50,52 @@ const CalendarEvents = () => {
     fetchEvents();
   }, []);
 
+  AOS.init();
   if (loading) return (
-    <div className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zincs-900'>
+    <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zincs-900'>
     <p className='text-center'>Loading upcoming dates...</p>
     </div> 
   );
 
   if (error) return (
-    <div className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900'>
+    <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='md:max-w-[60%] sm:max-w-[80%] sm:mx-2 md:mx-auto bg-zinc-900'>
         <p className='text-center text-amber-600'>Error: {error}</p>
         </div>
 
   );
 
+
   return (
     <div className='sm:mx-2'>
     <div className={card1}>
-      <p className='text-5xl m-2 text-amber-400'>Upcoming Dates</p>
+      <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-5xl m-2 text-amber-400'>Upcoming Dates</p>
       </div>
       {
         events.length?
         events.map((e) => 
-          <div className={events.indexOf(e) % 2 === 0? card2 : card1}>
-            <div>
+          <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className={events.indexOf(e) % 2 === 0? card2 : card1}>
+            <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250'>
             <FontAwesomeIcon className='text-amber-400 text-5xl' icon={faCalendarCheck} />
             </div>
             <div className='w-full'>
-              <p className='text-2xl mx-2 pr-4 text-amber-400'>{e.title}</p>
+              <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-2xl mx-2 pr-4 text-amber-400'>{e.title}</p>
               {e.description ? 
-              <a href={e.description} target='_blank' rel='noreferrer'className='text-xl mx-2 text-white'>Get tickets here!</a>
+              <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' href={e.description} target='_blank' rel='noreferrer'className='text-xl mx-2 text-white'>Get tickets here!</a>
               :
               <></>
               }
             </div>
-            <div className='flex flex-col w-full justify-end items-end'>
-            <p className='text-2xl text-amber-400'>{e.location}</p>
+            <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-col w-full justify-end items-end'>
+            <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-2xl text-amber-400'>{e.location}</p>
             <div>
-              <p className='text-3xl text-white'>{e.start.toLocaleDateString()}</p>
+              <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-3xl text-white'>{e.start.toLocaleDateString()}</p>
             </div>
             </div>
           </div>
         )
         :
-        <div className={card2}>
-        <p className='text-2xl m-2 text-amber-400'>Follow Big Tones for all show announcements!</p>
+        <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className={card2}>
+        <p data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-2xl m-2 text-amber-400'>Follow Big Tones for all show announcements!</p>
         </div>
       }
     </div>

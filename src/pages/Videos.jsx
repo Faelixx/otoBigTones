@@ -32,7 +32,7 @@ const Videos = () => {
 
       </section> */}
       <section>
-          <h1 data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-amber-400 text-center text-5xl mt-4'>Event Recaps</h1>
+          <h1 className='text-amber-400 text-center text-5xl mt-4'>Event Recaps</h1>
           <br></br>
           <div className=''>
             <VideoModalBlock playlistId={youtubePlaylists.recaps} apiKey={ytApiKey}/>

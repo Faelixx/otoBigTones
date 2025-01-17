@@ -1,4 +1,6 @@
 import React from 'react'
+import AOS from 'aos';
+
 import { useForm, ValidationError } from '@formspree/react'
 
 
@@ -7,11 +9,14 @@ const ContactForm = () => {
   if (state.succeeded) {
     return <p>Thanks!</p>
   }
+
+  AOS.init();
+
   return (
-    <div className=' flex flex-col items-center'>
-      <h1 className='text-2xl text-amber-400 text-left mt-4'>Send an email to Big Tones OTO</h1>
+    <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className=' flex flex-col items-center'>
+      <h1 data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-2xl text-amber-400 text-left mt-4'>Send an email to Big Tones OTO</h1>
       <form onSubmit={handleSubmit}>
-      <div className='flex flex-col mt-2 text-white'>
+      <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-col mt-2 text-white'>
         <label htmlFor="email">
           Email Address
         </label>
