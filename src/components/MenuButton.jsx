@@ -71,7 +71,7 @@ let location = useLocation().pathname
                         
                         </div>
             :
-                        <div className="text-lg text-white hover:text-amber-400">
+                        <div className="text-lg text-black hover:text-amber-400">
                         <Link to={item.link}>
                         {item.text}
                         </Link>
