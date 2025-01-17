@@ -5,7 +5,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import NavBarItems from '../helpers/NavBarItems'
 import otoLogo from '../assets/otoLogo.png'
 
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
 
 
@@ -64,9 +64,19 @@ let location = useLocation().pathname
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">        {NavBarItems().map(item => (
             location === item.link?
 
-            <a className="text-lg text-amber-400 underline" href={item.link}>{item.text}<br></br></a>
+                        <div className="text-lg text-amber-400 underline">
+                        <Link to={item.link}>
+                        {item.text}
+                        </Link>
+                        
+                        </div>
             :
-            <a className="text-lg hover:text-amber-400" href={item.link}>{item.text}<br></br></a>
+                        <div className="text-lg text-white hover:text-amber-400">
+                        <Link to={item.link}>
+                        {item.text}
+                        </Link>
+                        
+                        </div>
         ))}</div>
               </div>
             </DialogPanel>
