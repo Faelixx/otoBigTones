@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import { useState } from 'react';
-import {BrowserRouter, Link, Routes, Route, useLocation } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';

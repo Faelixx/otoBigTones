@@ -2,11 +2,12 @@ import React from 'react'
 import otoLogo from '../assets/otoLogo.png'
 import NavBarItems from '../helpers/NavBarItems';
 
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
 
 const Navbar = () => {
   let location = useLocation().pathname
+  console.log(location);
   
     return ( 
       <div>
@@ -16,9 +17,19 @@ const Navbar = () => {
           
             location === item.link?
 
-            <a className="text-lg text-amber-400 underline" href={item.link}>{item.text}</a>
+            <div className="text-lg text-amber-400 underline">
+            <Link to={item.link}>
+            {item.text}
+            </Link>
+            
+            </div>
             :
-            <a className="text-lg hover:text-amber-400" href={item.link}>{item.text}</a>
+            <div className="text-lg text-white hover:text-amber-400">
+            <Link to={item.link}>
+            {item.text}
+            </Link>
+            
+            </div>
 
           
         ))}
