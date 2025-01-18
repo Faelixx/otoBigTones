@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/otobigtones/static/css/main.baa5a3ef.css",
-    "main.js": "/otobigtones/static/js/main.ddde69bb.js",
-    "static/js/453.d855a71b.chunk.js": "/otobigtones/static/js/453.d855a71b.chunk.js",
-    "static/media/1.jpg": "/otobigtones/static/media/1.00a9e8d9e6ddcfd925e9.jpg",
-    "static/media/header.jpg": "/otobigtones/static/media/header.ec8e9b914aa85cda5854.jpg",
-    "static/media/otoClick.png": "/otobigtones/static/media/otoClick.e4cb1508339489cf7a24.png",
-    "static/media/3.jpg": "/otobigtones/static/media/3.0e4ac7a1ad40a49418e5.jpg",
-    "static/media/4.jpg": "/otobigtones/static/media/4.5b257bc5f5aed8bd045c.jpg",
-    "static/media/2.jpg": "/otobigtones/static/media/2.d4001709926393c00ed8.jpg",
-    "static/media/5.jpg": "/otobigtones/static/media/5.bb5b6ec1594e9ba66bad.jpg",
-    "static/media/tonesPurp.png": "/otobigtones/static/media/tonesPurp.88691f952f9f2f362df7.png",
-    "static/media/tonesCbc.png": "/otobigtones/static/media/tonesCbc.95d32a0219520d79eebf.png",
-    "static/media/iceCream.png": "/otobigtones/static/media/iceCream.2471a24c503e42164da0.png",
-    "static/media/liveMixtape.png": "/otobigtones/static/media/liveMixtape.7dca7f14c8a9c705d7ba.png",
-    "static/media/big_tones_album_home.jpg": "/otobigtones/static/media/big_tones_album_home.06d0ebfc01dbdd77e996.jpg",
-    "static/media/big_tones_album.jpg": "/otobigtones/static/media/big_tones_album.ed3a0a66ce3693da56c8.jpg",
-    "static/media/otoLogo.png": "/otobigtones/static/media/otoLogo.1b2abda8c6ea3573c01f.png",
-    "static/media/moonbeams.png": "/otobigtones/static/media/moonbeams.0f4c32e3cbcd63081e01.png",
-    "index.html": "/otobigtones/index.html",
-    "main.baa5a3ef.css.map": "/otobigtones/static/css/main.baa5a3ef.css.map",
-    "main.ddde69bb.js.map": "/otobigtones/static/js/main.ddde69bb.js.map",
-    "453.d855a71b.chunk.js.map": "/otobigtones/static/js/453.d855a71b.chunk.js.map"
+    "main.css": "/static/css/main.baa5a3ef.css",
+    "main.js": "/static/js/main.9951d7c1.js",
+    "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
+    "static/media/1.jpg": "/static/media/1.00a9e8d9e6ddcfd925e9.jpg",
+    "static/media/header.jpg": "/static/media/header.ec8e9b914aa85cda5854.jpg",
+    "static/media/otoClick.png": "/static/media/otoClick.e4cb1508339489cf7a24.png",
+    "static/media/3.jpg": "/static/media/3.0e4ac7a1ad40a49418e5.jpg",
+    "static/media/4.jpg": "/static/media/4.5b257bc5f5aed8bd045c.jpg",
+    "static/media/2.jpg": "/static/media/2.d4001709926393c00ed8.jpg",
+    "static/media/5.jpg": "/static/media/5.bb5b6ec1594e9ba66bad.jpg",
+    "static/media/tonesPurp.png": "/static/media/tonesPurp.88691f952f9f2f362df7.png",
+    "static/media/tonesCbc.png": "/static/media/tonesCbc.95d32a0219520d79eebf.png",
+    "static/media/iceCream.png": "/static/media/iceCream.2471a24c503e42164da0.png",
+    "static/media/liveMixtape.png": "/static/media/liveMixtape.7dca7f14c8a9c705d7ba.png",
+    "static/media/big_tones_album_home.jpg": "/static/media/big_tones_album_home.06d0ebfc01dbdd77e996.jpg",
+    "static/media/big_tones_album.jpg": "/static/media/big_tones_album.ed3a0a66ce3693da56c8.jpg",
+    "static/media/otoLogo.png": "/static/media/otoLogo.1b2abda8c6ea3573c01f.png",
+    "static/media/moonbeams.png": "/static/media/moonbeams.0f4c32e3cbcd63081e01.png",
+    "index.html": "/index.html",
+    "main.baa5a3ef.css.map": "/static/css/main.baa5a3ef.css.map",
+    "main.9951d7c1.js.map": "/static/js/main.9951d7c1.js.map",
+    "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baa5a3ef.css",
-    "static/js/main.ddde69bb.js"
+    "static/js/main.9951d7c1.js"
   ]
 }
