@@ -16,12 +16,12 @@ const ContactForm = () => {
     <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className=' flex flex-col items-center'>
       <h1 data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-2xl text-amber-400 text-left mt-4'>Send an email to Big Tones OTO</h1>
       <form onSubmit={handleSubmit}>
-      <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-col mt-2 text-white'>
-        <label htmlFor="email">
+      <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-col mt-2'>
+        <label className='text-white' htmlFor="email">
           Email Address
         </label>
         <input
-          className="w-96 rounded-sm"
+          className="w-96 rounded-sm text-black"
           id="email"
           type="email" 
           name="email"
@@ -32,9 +32,9 @@ const ContactForm = () => {
           errors={state.errors}
         />
         
-        <label>Message:</label>
+        <label className='text-white'>Message:</label>
         <textarea
-          className='rounded-sm'
+          className='rounded-sm text-black'
           id="message"
           name="message"
           />

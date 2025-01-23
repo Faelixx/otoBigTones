@@ -29,7 +29,7 @@ const AlbumBlock = () => {
               <div className={'w-full flex flex-col max-[640px]:items-center  md:items-start md:flex-row gap-2 md:gap-8 justify-center'}>
 
                 <div>
-                  <img className='object-cover object-position object-[center_32%] w-[350px] h-[50px]  md:h-[152px] rounded-xl' src={albumId['images'][1]['url']}></img>
+                  <img className='object-cover object-position object-[center_32%] w-[350px] h-[50px]  md:h-[152px] rounded-xl' src={albumId['images'][1]['url']} alt={albumId.name + ' album art'}></img>
                 </div>
                 <div>
                   <AlbumElement key={idx} id={albumId.id} />
