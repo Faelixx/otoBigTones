@@ -48,7 +48,7 @@ const CalendarEvents = () => {
     };
 
     fetchEvents();
-  }, []);
+  }, [events]);
 
   AOS.init();
   if (loading) return (
