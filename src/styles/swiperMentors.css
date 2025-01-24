@@ -68,19 +68,23 @@ body {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
-  margin-left: 20px;
-  margin-right: 20px;
 
 }
 
 .mySwiper .swiper-slide {
-  width: 25%;
+  width: 55%;
   height: 100%;
-  opacity: 0.4;
-  padding-left: 20px;
-  padding-right: 20px;
+  opacity: 0.5;
+  padding-left: 1vw;
+  padding-right: 1vw;
 
 }
+
+.mySwiper .swiper-slide:hover {
+  opacity: 1;
+}
+
+
 
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
@@ -90,3 +94,12 @@ body {
   display: block;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 768px) {
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+    width: 80px;
+    height: 140px;
+  }
+} 
