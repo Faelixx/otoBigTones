@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { getMusic } from '../api/SpotifyAlbumsApi.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faYoutube, faApple, faSoundcloud, faAmazon } from "@fortawesome/free-brands-svg-icons"
 
 
 const AlbumElement = (props) => {
@@ -39,7 +41,19 @@ const AlbumBlock = () => {
               </div>
         )
         : []
-        }
+        }       
+    <div className='flex flex-col items-center justify-items-center'>
+
+                <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank' rel='noreferrer'>And Other Streaming Platforms 
+                <br></br>
+                <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-row gap-2 justify-center'>
+              <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>
+              <FontAwesomeIcon className='text-amber-400' icon={faApple}/>
+              <FontAwesomeIcon className='text-amber-400' icon={faSoundcloud}/>
+              <FontAwesomeIcon className='text-amber-400' icon={faAmazon}/>
+        
+                </div></a>
+                </div>
     </div>
   );
 };

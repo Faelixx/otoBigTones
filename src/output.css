@@ -652,6 +652,11 @@ video {
   margin-bottom: 10px;
 }
 
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .-ml-8{
   margin-left: -2rem;
 }
@@ -1048,6 +1053,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1056,6 +1065,16 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-2{
@@ -1319,8 +1338,16 @@ video {
     height: 225px;
   }
 
+  .sm\:h-\[150px\]{
+    height: 150px;
+  }
+
   .sm\:w-\[1000px\]{
     width: 1000px;
+  }
+
+  .sm\:w-\[340px\]{
+    width: 340px;
   }
 
   .sm\:max-w-\[80\%\]{
