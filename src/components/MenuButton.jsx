@@ -61,18 +61,18 @@ let location = useLocation().pathname
                 <div className="px-4 sm:px-6">
                   <DialogTitle className="text-base font-semibold leading-6 text-gray-900">OTO Big Tones</DialogTitle>
                 </div>
-                <div className="relative mt-6 flex-1 px-4 sm:px-6">        {NavBarItems().map(item => (
-            location === item.link?
-
+                <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                  {NavBarItems().map(item => (
+                        location === item.link?
                         <div className="text-lg text-amber-400 underline">
-                        <Link to={item.link}>
+                        <Link to={item.link} onClick={()=> setOpen(false)}>
                         {item.text}
                         </Link>
                         
                         </div>
             :
                         <div className="text-lg text-black hover:text-amber-400">
-                        <Link to={item.link}>
+                        <Link to={item.link} onClick={()=> setOpen(false)}>
                         {item.text}
                         </Link>
                         
