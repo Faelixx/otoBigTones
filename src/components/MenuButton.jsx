@@ -39,7 +39,7 @@ let location = useLocation().pathname
 
       <div className="fixed inset-0 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-[50%] pl-10">
             <DialogPanel
               transition
               className="pointer-events-auto relative w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
@@ -57,21 +57,21 @@ let location = useLocation().pathname
                   </button>
                 </div>
               </TransitionChild>
-              <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+              <div className="flex h-full flex-col overflow-y-scroll bg-amber-100 bg-opacity-60 py-6 shadow-xl">
                 <div className="px-4 sm:px-6">
-                  <DialogTitle className="text-base font-semibold leading-6 text-gray-900">OTO Big Tones</DialogTitle>
+                  <DialogTitle className="text-base font-semibold leading-6 text-gray-900 font-league text-xl">OTO Big Tones</DialogTitle>
                 </div>
                 <div className="relative mt-6 flex-1 px-4 sm:px-6">
                   {NavBarItems().map(item => (
                         location === item.link?
-                        <div className="text-lg text-amber-400 underline">
+                        <div className="text-lg text-amber-800 underline font-league">
                         <Link to={item.link} onClick={()=> setOpen(false)}>
                         {item.text}
                         </Link>
                         
                         </div>
             :
-                        <div className="text-lg text-black hover:text-amber-400">
+                        <div className="text-lg text-black hover:text-amber-800 font-league">
                         <Link to={item.link} onClick={()=> setOpen(false)}>
                         {item.text}
                         </Link>
