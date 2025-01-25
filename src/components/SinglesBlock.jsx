@@ -8,7 +8,7 @@ import Viewport from '../helpers/Viewport';
 const SingleElement = (props) => {
   return (
     <>
-      <h1 className='text-amber-400 text-center text-3xl'>Singles</h1>
+      <h1 className='text-amber-400 text-center text-3xl mb-1'>Singles</h1>
     {
       Viewport().width > 740? 
       <div>

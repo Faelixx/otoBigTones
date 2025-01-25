@@ -22,12 +22,13 @@ const AlbumBlock = () => {
   }, []);
 
   return (
+    <>
     <div className='flex gap-2 flex-col md:flex-row md:flex-wrap'>
         {
-        albumData.length? albumData.map(
-          (albumId, idx) =>
-            <div className='w-full'>
-              <h1 className='text-amber-400 text-center text-3xl'>{albumId.name}</h1>
+          albumData.length? albumData.map(
+            (albumId, idx) =>
+              <div className='w-full'>
+              <h1 className='text-amber-400 text-center text-3xl mb-1'>{albumId.name}</h1>
               <div className={'w-full flex flex-col max-[640px] items-center  md:items-start md:flex-row gap-2 md:gap-8 justify-center'}>
 
                 <div>
@@ -41,7 +42,8 @@ const AlbumBlock = () => {
               </div>
         )
         : []
-        }       
+      }       
+    </div>
     <div className='flex flex-col items-center justify-items-center'>
 
                 <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank' rel='noreferrer'>And Other Streaming Platforms 
@@ -54,7 +56,7 @@ const AlbumBlock = () => {
         
                 </div></a>
                 </div>
-    </div>
+  </>
   );
 };
 
