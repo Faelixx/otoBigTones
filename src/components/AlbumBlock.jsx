@@ -46,9 +46,9 @@ const AlbumBlock = () => {
     </div>
     <div className='flex flex-col items-center justify-items-center'>
 
-                <a data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank' rel='noreferrer'>And Other Streaming Platforms 
+                <a data-aos='fade-up'  data-aos-duration='1250' className='pt-2 text-amber-400 text-2xl underline' href='https://hypeddit.com/bigtones/existencealbum' target='_blank' rel='noreferrer'>And Other Streaming Platforms 
                 <br></br>
-                <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex flex-row gap-2 justify-center'>
+                <div data-aos='fade-up'  data-aos-duration='1250' className='flex flex-row gap-2 justify-center'>
               <FontAwesomeIcon className='text-amber-400' icon={faYoutube}/>
               <FontAwesomeIcon className='text-amber-400' icon={faApple}/>
               <FontAwesomeIcon className='text-amber-400' icon={faSoundcloud}/>

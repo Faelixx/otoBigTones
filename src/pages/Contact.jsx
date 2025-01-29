@@ -40,12 +40,12 @@ const Contact = () => {
     <div>
       <AltHeader />
       <section>
-        <h1 data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='text-amber-400 text-center text-8xl'>Contact</h1>
-        <div data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250' className='flex items-center justify-center gap-4'>
+        <h1 data-aos='fade-up'  data-aos-duration='1250' className='text-amber-400 text-center text-8xl'>Contact</h1>
+        <div data-aos='fade-up'  data-aos-duration='1250' className='flex items-center justify-center gap-4'>
           <div>
-            <img data-aos='fade-left' data-aos-delay='50' data-aos-duration='1250' className='w-[250px]' src={BigTonesContactPic} alt='Big Tones On Stage'></img>
+            <img data-aos='fade-left'  data-aos-duration='1250' className='w-[250px]' src={BigTonesContactPic} alt='Big Tones On Stage'></img>
           </div>
-          <div data-aos='fade-right' data-aos-delay='50' data-aos-duration='1250' className='flex flex-col'>
+          <div data-aos='fade-right'  data-aos-duration='1250' className='flex flex-col'>
             {socials.map(item => (
               
               item.mailto? 

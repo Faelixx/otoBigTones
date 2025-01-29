@@ -11,7 +11,7 @@ const Music = () => {
   return (
     <div>
       <AltHeader />
-      <section data-aos='fade-up' data-aos-delay='50' data-aos-duration='1250'>
+      <section data-aos='fade-up'  data-aos-duration='1250'>
       <h1 className='text-amber-400 text-center text-8xl'>Music</h1>
         <br></br>
         <div>
