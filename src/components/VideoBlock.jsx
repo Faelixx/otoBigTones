@@ -5,7 +5,11 @@ import { getYtVideos } from '../api/YoutubeVidsApi';
 const VideoElement = (props) => {
   return (
     <div>
-        <iframe width="325" height="210"
+        <iframe 
+        loading='lazy'
+        title={props.videoId}
+        width="325" 
+        height="210"
         src={`https://www.youtube.com/embed/${props.id}`}>
 
         </iframe>

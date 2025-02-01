@@ -37,15 +37,20 @@ const Home = () => {
       <section className='translate-y-[-2rem] flex flex-col items-center justify-items-center'>
         <h2 data-aos='fade-up'  data-aos-duration='1250' className='text-4xl text-amber-400'>Watch Open Ya Eyez From Existence</h2>
         <div data-aos='fade-up'  data-aos-duration='1250'>
-          <iframe className="md:w-[524px] md:h-[324px] w-full" src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe className="md:w-[524px] md:h-[324px] w-full" src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" title="Open Ya Eyez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <h2 data-aos='fade-up'  data-aos-duration='1250' className='text-amber-400 text-2xl pt-6'>Stream Existence on Spotify</h2>
         <div data-aos='fade-up'  data-aos-duration='1250' className='flex gap-6 flex-row flex items-center lg:flex-row'>
           {Viewport().width < 1024 ? 
-        <iframe src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" width="350" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> : 
+        <iframe
+        title='Existence on Spotify'
+        src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" width="350" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+          : 
           <div data-aos='fade-up'  data-aos-duration='1250' className='flex flex-row gap-6'>
             <img data-aos='fade-up'  data-aos-duration='1250' className='object-cover w-80 h-[9.5rem] rounded-xl' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
-            <iframe src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" width="350" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe
+            title='Existence on Spotify' 
+            src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" width="350" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
           }
         </div>
