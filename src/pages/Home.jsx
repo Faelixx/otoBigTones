@@ -10,6 +10,8 @@ import Viewport from '../helpers/Viewport';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faApple, faSoundcloud, faAmazon } from "@fortawesome/free-brands-svg-icons"
+import { faPlay } from "@fortawesome/free-solid-svg-icons"
+
 
 
 
@@ -37,7 +39,46 @@ const Home = () => {
       <section className='translate-y-[-2rem] flex flex-col items-center justify-items-center'>
         <h2 data-aos='fade-up'  data-aos-duration='1250' className='text-4xl text-amber-400'>Watch Open Ya Eyez From Existence</h2>
         <div data-aos='fade-up'  data-aos-duration='1250'>
-          <iframe className="md:w-[524px] md:h-[324px] w-full" src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" title="Open Ya Eyez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe 
+          loading='lazy'
+          srcDoc="<style>
+          * {
+          padding: 0:
+          margin: 0;
+          overflow: hidden;
+          }
+
+          body, html {
+            height: 100%;
+          }
+
+          img, svg {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+            
+            svg {
+              filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+              transition: all 250ms ease-in-out;
+              }
+
+              body:hover svg {
+              filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+              transform: scale(1.2);
+              }
+          </style>
+          <a href='https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc'>
+            <img src='https://img.youtube.com/vi/NnKWiIa6MK4/maxresdefault.jpg'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+            
+          </a>
+          "
+          className="md:w-[524px] md:h-[324px] w-full" 
+          src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" 
+          title="Open Ya Eyez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <h2 data-aos='fade-up'  data-aos-duration='1250' className='text-amber-400 text-2xl pt-6'>Stream Existence on Spotify</h2>
         <div data-aos='fade-up'  data-aos-duration='1250' className='flex gap-6 flex-row flex items-center lg:flex-row'>
