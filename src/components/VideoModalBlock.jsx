@@ -9,14 +9,7 @@ import { VideoElement } from './VideoBlock';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, } from "@fortawesome/free-solid-svg-icons"
 
-
-import '../styles/swiper.css'
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-
-import 'react-modal-video/scss/modal-video.scss'
+import '../App.css'
 
 
 const ThumbnailElement = (props) => {
@@ -55,6 +48,7 @@ const ThumbnailElement = (props) => {
 }
 
 const VideoModalBlock = (props) => {
+  const [activeSlide, setActiveSlide] = useState(1);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [videoData, setVideoData] = useState([]);
 
@@ -70,21 +64,28 @@ const VideoModalBlock = (props) => {
     <div data-aos='fade-up'  data-aos-duration='1250' className='max-w-[1000px] m-auto relative'>
       {
         videoData.length? videoData.map((videoObj, idx) =>
-          <div className='hidden'>
-            <div className='text-amber-400'>{videoObj.snippet.title}</div>
+          <div className='hidden fade'>
+            <div className='text-amber-400 py-[8px] px-[12px] absolute top-[0]'>{videoObj.snippet.title}</div>
             <div><VideoElement videoId={videoObj.contentDetails.videoId} id={videoObj.contentDetails.videoId}/></div>
           </div>
         ) 
         : 
         []
       }
-      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none right-[0]' onClick={()=> {console.log('goodbye')}}>&#10095;</button>
-      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none ' onClick={()=> {console.log('hello')}}>&#10094;</button>
+      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none right-[0] hover:bg-[rgba(0,0,0,0.8)]' onClick={()=> {console.log('goodbye')}}>&#10095;</button>
+      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none  hover:bg-[rgba(0,0,0,0.8)]' onClick={()=> {console.log('hello')}}>&#10094;</button>
     </div>
     <div>
-      <span></span>
-      <span></span>
-      <span></span>
+      {
+        videoData.length? videoData.map((idx) => {
+          {idx == activeSlide? 
+            <span className='cursor-pointer h-[15px] w-[15px] my-0 mx-[2px] bg-[#717171] rounded-[50%] inline-block transition-[background-color 0.6s ease]'></span>
+            : 
+            <span className='cursor-pointer h-[15px] w-[15px] my-0 mx-[2px] bg-[#bbb] rounded-[50%] inline-block transition-[background-color 0.6s ease]'></span>}
+        }) 
+        : 
+        []
+      }
     </div>
     </>
   );
