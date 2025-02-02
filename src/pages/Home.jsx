@@ -137,8 +137,18 @@ const Home = () => {
           <div data-aos='fade-up'  data-aos-duration='1250' className='flex flex-row gap-6'>
             <img data-aos='fade-up'  data-aos-duration='1250' className='object-cover w-80 h-[9.5rem] rounded-xl' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
             <iframe
-            title='Existence on Spotify' 
-            src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" width="350" height="160" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              loading="lazy"
+              title='Existence on Spotify'
+              srcDoc={iframeSus}
+              src="https://open.spotify.com/embed/album/5PXO2ZJvGOTluyBmv6P2PD?utm_source=generator" 
+              width="350" 
+              height="160" 
+              frameBorder="0" 
+              allowfullscreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              >
+        </iframe> 
+              
           </div>
           }
         </div>

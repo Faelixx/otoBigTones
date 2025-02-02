@@ -4,7 +4,7 @@ import ToTop from './ToTop.jsx'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faFacebook, faSpotify } from "@fortawesome/free-brands-svg-icons"
-import otoLogo from '../assets/otoLogo.png'
+import otoLogo from '../assets/otoLogo.webp'
 
 const Footer = () => {
   return (

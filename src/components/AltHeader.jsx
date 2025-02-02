@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
-import BigTonesAlbumArt from '../assets/big_tones_album_home.jpg';
+import BigTonesAlbumArt from '../assets/big_tones_album_home.webp';
 
 
 

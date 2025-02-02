@@ -1,5 +1,5 @@
 import React from 'react'
-import otoLogo from '../assets/otoLogo.png'
+import otoLogo from '../assets/otoLogo.webp'
 import NavBarItems from '../helpers/NavBarItems';
 
 import { useLocation, Link } from 'react-router-dom'
@@ -7,7 +7,6 @@ import { useLocation, Link } from 'react-router-dom'
 
 const Navbar = () => {
   let location = useLocation().pathname
-  console.log(location);
   
     return ( 
       <div>

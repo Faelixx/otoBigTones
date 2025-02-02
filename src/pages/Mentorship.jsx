@@ -4,7 +4,7 @@ import AOS from 'aos';
 import AltHeader from '../components/AltHeader';
 import VideoModalBlock from '../components/VideoModalBlock';
 
-import headerImage from '../assets/mentorship/header.jpg';
+import headerImage from '../assets/mentorship/header.webp';
 import { useState } from 'react';
 
 import {Swiper, SwiperSlide} from 'swiper/react';

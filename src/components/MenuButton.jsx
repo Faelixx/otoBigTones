@@ -3,7 +3,7 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } fro
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 import NavBarItems from '../helpers/NavBarItems'
-import otoLogo from '../assets/otoLogo.png'
+import otoLogo from '../assets/otoLogo.webp'
 
 import { useLocation, Link } from 'react-router-dom'
 

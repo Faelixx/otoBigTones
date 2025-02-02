@@ -2,7 +2,7 @@ import React from 'react'
 import AOS from 'aos'
 
 import AltHeader from '../components/AltHeader.jsx'
-import otoLogo from '../assets/otoLogo.png'
+import otoLogo from '../assets/otoLogo.webp'
 import otoClick from '../assets/epk/otoClick.webp'
 import tonesPurp from '../assets/epk/tonesPurp.webp'
 import moonbeams from '../assets/epk/moonbeams.webp'
