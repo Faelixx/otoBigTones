@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/52d70656-03d4-4a33-b45f-0c95eebe2c6c/big_tones_album_home.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20250202%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20250202T195132Z&X-Amz-Expires=86400&X-Amz-Signature=fbcc12f88ca0f2a99c76e64409ee798f743b13c6f6ed48aff2845a79d5245a79&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22big_tones_album_home.webp%22&response-content-type=image%2Fwebp&x-id=GetObject
