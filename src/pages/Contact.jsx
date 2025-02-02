@@ -3,9 +3,7 @@ import AOS from 'aos';
 
 import AltHeader from '../components/AltHeader.jsx';
 
-import ContactForm from '../components/ContactForm.jsx';
-
-import BigTonesContactPic from '../assets/contact/1.jpg'
+import BigTonesContactPic from '../assets/contact/1.webp'
 
 const Contact = () => {
 

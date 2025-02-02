@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import VideoBlock from '../components/VideoBlock';
 import { youtubePlaylists, ytApiKey } from '../api/ytKey';
 
-import BigTonesAlbumArt from '../assets/big_tones_album.jpg'
+import BigTonesAlbumArt from '../assets/big_tones_album.webp'
 import Viewport from '../helpers/Viewport';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -1,8 +1,8 @@
-import canoeeLake from '../assets/mentorship/1.jpg'
-import beardys from '../assets/mentorship/2.jpg'
-import buffNarrows from '../assets/mentorship/3.jpg'
-import micDrop from '../assets/mentorship/4.jpg'
-import beuval from '../assets/mentorship/5.jpg'
+import canoeeLake from '../assets/mentorship/1.webp'
+import beardys from '../assets/mentorship/2.webp'
+import buffNarrows from '../assets/mentorship/3.webp'
+import micDrop from '../assets/mentorship/4.webp'
+import beuval from '../assets/mentorship/5.webp'
 
 export const mentorshipItems = [
   {

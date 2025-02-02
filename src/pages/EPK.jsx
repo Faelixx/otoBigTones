@@ -3,11 +3,11 @@ import AOS from 'aos'
 
 import AltHeader from '../components/AltHeader.jsx'
 import otoLogo from '../assets/otoLogo.png'
-import otoClick from '../assets/epk/otoClick.png'
-import tonesPurp from '../assets/epk/tonesPurp.png'
-import moonbeams from '../assets/epk/moonbeams.png'
-import liveMixtape from '../assets/epk/liveMixtape.png'
-import iceCream from '../assets/epk/iceCream.png'
+import otoClick from '../assets/epk/otoClick.webp'
+import tonesPurp from '../assets/epk/tonesPurp.webp'
+import moonbeams from '../assets/epk/moonbeams.webp'
+import liveMixtape from '../assets/epk/liveMixtape.webp'
+import iceCream from '../assets/epk/iceCream.webp'
 
 import Viewport from '../helpers/Viewport';
 
