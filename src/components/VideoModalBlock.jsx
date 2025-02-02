@@ -4,10 +4,7 @@ import AOS from 'aos';
 import { useState, useEffect } from 'react';
 import { getYtVideos } from '../api/YoutubeVidsApi';
 import ModalVideo from 'react-modal-video';
-
-
-import {Swiper, SwiperSlide} from 'swiper/react';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { VideoElement } from './VideoBlock';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, } from "@fortawesome/free-solid-svg-icons"
@@ -70,8 +67,28 @@ const VideoModalBlock = (props) => {
 
   return (
     <div data-aos='fade-up'  data-aos-duration='1250' className=''>
+      {
+        videoData.length? videoData.map((videoObj, idx) =>
+          <div>
+            <div className='text-amber-400'>{videoObj.snippet.title}</div>
+            {console.log(videoObj.contentDetails)}
+            <div><VideoElement videoId={videoObj.contentDetails.videoId} id={videoObj.contentDetails.videoId}/></div>
+          </div>
+        ) 
+        : 
+        []
+      }
+    </div>
+  );
+};
 
-      <Swiper
+const transformData = (data) => {
+  return data.map((item) => {
+    return item
+  })
+}
+
+/* <Swiper
         style={{
           '--swiper-navigation-color': '#FFC052',
           '--swiper-pagination-color': '#FFC052',
@@ -122,15 +139,6 @@ const VideoModalBlock = (props) => {
           :
           []
         }
-      </Swiper>
-    </div>
-  );
-};
-
-const transformData = (data) => {
-  return data.map((item) => {
-    return item
-  })
-}
+      </Swiper> */
 
 export default VideoModalBlock;
