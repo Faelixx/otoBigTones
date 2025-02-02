@@ -66,19 +66,27 @@ const VideoModalBlock = (props) => {
   AOS.init();
 
   return (
-    <div data-aos='fade-up'  data-aos-duration='1250' className=''>
+    <>
+    <div data-aos='fade-up'  data-aos-duration='1250' className='max-w-[1000px] m-auto relative'>
       {
         videoData.length? videoData.map((videoObj, idx) =>
-          <div>
+          <div className='hidden'>
             <div className='text-amber-400'>{videoObj.snippet.title}</div>
-            {console.log(videoObj.contentDetails)}
             <div><VideoElement videoId={videoObj.contentDetails.videoId} id={videoObj.contentDetails.videoId}/></div>
           </div>
         ) 
         : 
         []
       }
+      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none right-[0]' onClick={()=> {console.log('goodbye')}}>&#10095;</button>
+      <button className='cursor-pointer absolute top-[50%] w-auto mt-[-22px] p-[16px] bg-white font-bold text-base transition-[0.6s ease] rounded-[3px 0 0 3px] select-none ' onClick={()=> {console.log('hello')}}>&#10094;</button>
     </div>
+    <div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </>
   );
 };
 

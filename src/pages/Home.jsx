@@ -113,7 +113,7 @@ const Home = () => {
             
           </a>
           "
-          className="md:w-[524px] md:h-[324px] w-full" 
+          className="md:w-[600px] md:h-[400px] w-full" 
           src="https://www.youtube.com/embed/NnKWiIa6MK4?si=FNzI6JYWxntFEoLc" 
           title="Open Ya Eyez" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>

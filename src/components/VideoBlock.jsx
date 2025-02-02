@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { getYtVideos } from '../api/YoutubeVidsApi';
+import Viewport from '../helpers/Viewport';
+
 
 const srcDocStyle = (videoId) => {
   return (
@@ -47,10 +49,9 @@ export const VideoElement = (props) => {
     <div>
         <iframe 
         loading='lazy'
+        className="md:w-[600px] md:h-[400px] w-full" 
         title={props.videoId}
         srcDoc={srcDocStyle(props.id)}
-        width="325" 
-        height="210"
         src={`https://www.youtube.com/embed/${props.id}`}>
 
         </iframe>
