@@ -35,9 +35,9 @@ const srcDocStyle = (videoId) => {
               transform: scale(1.2);
               }
           </style>
-          <a href='https://www.youtube.com/embed/${videoId}?si=FNzI6JYWxntFEoLc'>
-            <img src='https://img.youtube.com/vi/${videoId}/maxresdefault.jpg'>
-            <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+          <a href='https://www.youtube.com/embed/${videoId}?si=FNzI6JYWxntFEoLc&autoplay=1'>
+            <img src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#FFC052' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
             
           </a>
           `
@@ -49,10 +49,12 @@ export const VideoElement = (props) => {
     <div>
         <iframe 
         loading='lazy'
-        className="md:w-[600px] md:h-[400px] w-full" 
+        className="md:w-[600px] md:h-[400px] w-full"
         title={props.videoId}
         srcDoc={srcDocStyle(props.id)}
-        src={`https://www.youtube.com/embed/${props.id}`}>
+        src={`https://www.youtube.com/embed/${props.id}?autoplay=1`}
+        allow='autoplay'
+        >
 
         </iframe>
     </div>

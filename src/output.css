@@ -890,12 +890,12 @@ video {
   min-width: 100%;
 }
 
-.max-w-\[1000px\]{
-  max-width: 1000px;
-}
-
 .max-w-\[50\%\]{
   max-width: 50%;
+}
+
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 
 .max-w-md{
