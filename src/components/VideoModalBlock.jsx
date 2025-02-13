@@ -24,13 +24,13 @@ const VideoModalBlock = (props) => {
 
   return (
     <>
-    <div data-aos='fade-up'  data-aos-duration='1250' className='max-w-[600px] m-auto relative'>
+    <div className='flex flex-row flex-wrap justify-center m-auto'>
       {videoData.length? videoData.map((videoObj, idx) => 
       <ThumbnailElement 
-      key={idx}
-      id={videoObj.contentDetails.videoId}
-      thumbnail={videoObj.snippet.thumbnails.standard.url}
-      title={videoObj.snippet.title}
+        key={idx}
+        id={videoObj.contentDetails.videoId}
+        thumbnail={videoObj.snippet.thumbnails.standard.url}
+        title={videoObj.snippet.title}
       />)
       : 
       []}
@@ -59,15 +59,23 @@ const transformData = (data) => {
                 videoId={props.id}
                 onClose={() => setOpen(false)}
               />
-                  <div data-aos='fade-up'  data-aos-duration='1250' className='border-x-2 border-amber-400/25 rounded relative mt-[-280px]'>
-      <button className='hover:brigtness-50' onClick={() => setOpen(true)}>
-        <div className='flex flex-col justify-center items-center justify-items-center translate-y-56 lg:translate-y-72'>
+            <div className=''>
+              <button onClick={() => setOpen(true)}>
+              <div className='h-[200px] w-[270px] flex flex-col items-center relative'>
+                <img 
+                  src={props.thumbnail} 
+                  alt={props.title + 'thumbnail'}
+                  className='absolute h-[200px] w-[270px] border-x-2 border-amber-400/25 rounded'  
+                  >
+                  </img>
+                <h1 className='text-center mt-1 text-xl text-center text-amber-400 absolute max-w-[250px]'>{props.title}</h1>
+                <div className='w-[64px] h-[64px] absolute top-[64px]'>
+                  <svg className='' xwwmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#FFC052' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
 
-        </div>
-        <img data-aos='fade-up'  data-aos-duration='1250' src={props.thumbnail} alt={props.title + 'thumbnail'}></img>
-      </button>
-      <h1 data-aos='fade-up'  data-aos-duration='1250' className='text-center mt-1 text-3xl text-center text-amber-400'>{props.title}</h1>
+                </div>
 
+              </div>
+              </button>
     </div>              
         
         
