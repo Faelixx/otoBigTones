@@ -78,21 +78,25 @@ const EPK = () => {
       <div data-aos='fade-up'  data-aos-duration='1250' className='flex flex-col items-center'>
         <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400'></hr>
       </div>
-        <div>
+        <div className='w-full flex flex-col items-center justify-center'>
           <h1 data-aos='fade-up'  data-aos-duration='1250' className='text-amber-400 text-center text-5xl my-4'>
             PRESS
           </h1>
-          <div>
+          <div className='sm:max-w-[500px] max-w-[1000px]'>
             {
-              articles.length? articles.map((article, idx) =>  
-              <LinkPreview 
-              title={article.title}
-              url={article.url}
-              source={article.source}
-              thumbnail={article.thumbnail}
-              caption={article.caption}
-              
-              />) : []
+              articles.length? articles.map((article, idx) =>
+              <div className='mb-2'>
+                <LinkPreview 
+                title={article.title}
+                url={article.url}
+                source={article.source}
+                thumbnail={article.thumbnail}
+                caption={article.caption}
+                
+                />
+                
+              </div>
+            ) : []
             }  
           </div>
         </div>

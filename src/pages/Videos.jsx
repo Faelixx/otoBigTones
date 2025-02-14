@@ -16,7 +16,10 @@ const Videos = () => {
       <section>
           <h1 data-aos='fade-up'  data-aos-duration='1250' className='text-amber-400 text-center text-8xl'>Music Videos</h1>
           <br></br>
-          <div className=''>
+          <div className='flex flex-col items-center'>
+            <hr className='h-0.5 rounded-md border-0 w-10/12 bg-amber-400 outline-amber-400 mb-4'></hr>
+          </div>
+          <div className='mb-2'>
             <VideoModalBlock playlistId={youtubePlaylists.releases} apiKey={ytApiKey}/>
           </div>
           <div className='flex flex-col items-center'>

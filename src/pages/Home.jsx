@@ -10,7 +10,6 @@ import Viewport from '../helpers/Viewport';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faApple, faSoundcloud, faAmazon } from "@fortawesome/free-brands-svg-icons"
-import { faPlay } from "@fortawesome/free-solid-svg-icons"
 
 
 const Home = () => {
@@ -61,7 +60,7 @@ const Home = () => {
         {Viewport().width > 640 ? 
         <div data-aos='fade-up'  data-aos-duration='1250' className='mb-[-40px]'>
           <img data-aos='fade-up'  data-aos-duration='1250' className='object-cover max-h-48 min-w-full
-          md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' />
+          md:min-h-52 lg:object-none lg:min-h-80 lg:max-h-80 lg:min-w-full' src={BigTonesAlbumArt} alt='OTO Big Tones Album Art' loading='eager'/>
           <h1 className='text-8xl text-slate-50 text-center translate-y-[-6.5rem] '>OTO Big Tones</h1>
         </div>
         :

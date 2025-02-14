@@ -23,7 +23,7 @@ const Navbar = () => {
             
             </div>
             :
-            <div className="text-lg text-white hover:text-amber-400">
+            <div className="text-lg text-white duration-300 ease-in-out hover:underline hover:text-amber-400">
             <Link to={item.link}>
             {item.text}
             </Link>

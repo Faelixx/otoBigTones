@@ -7,11 +7,11 @@ import VideoModalBlock from '../components/VideoModalBlock';
 import headerImage from '../assets/mentorship/header.webp';
 import { useState } from 'react';
 
-import {Swiper, SwiperSlide} from 'swiper/react';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-
 import { mentorshipItems } from '../helpers/MentroshipItems';
 import { youtubePlaylists, ytApiKey } from '../api/ytKey';
+
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
 
 
 import '../styles/swiperMentors.css'
